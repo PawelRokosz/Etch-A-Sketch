@@ -3,6 +3,14 @@
   padding: 0;
 }
 
+.main_button{
+  width: 20%;
+  height: 60px;
+  position: relative;
+  left: 40%;
+  top: 25px;
+}
+
 .grid {
   float: left;
   width: 32px;
@@ -20,4 +28,8 @@
 
 .color{
   background-color: yellow;
+}
+
+.clear{
+  background-color: #ddd;
 }
