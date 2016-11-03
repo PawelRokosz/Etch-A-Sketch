@@ -36,4 +36,143 @@ $(document).ready(function(){
     }
     $(this).css({'opacity': opacityNow});
   }
+
+  $('#blue').on('click', function(){
+    $('.grid').mouseover(function(){
+      if($(this).hasClass('new_green')){
+        $(this).removeClass('new_green');
+        $(this).addClass('new_blue');
+      }else if($(this).hasClass('new_red')){
+        $(this).removeClass('new_red');
+        $(this).addClass('new_blue');
+      }else if($(this).hasClass('new_yellow')){
+        $(this).removeClass('new_yellow');
+        $(this).addClass('new_blue');
+      }else if($(this).hasClass('new_black')){
+        $(this).removeClass('new_black');
+        $(this).addClass('new_blue');
+      }else if($(this).hasClass('new_eraser')){
+        $(this).removeClass('new_eraser');
+        $(this).addClass('new_blue');
+      }else{
+        $(this).addClass('new_blue');
+      }
+    });
+  });
+
+  $('#green').on('click', function(){
+    $('.grid').mouseover(function(){
+      if($(this).hasClass('new_blue')){
+        $(this).removeClass('new_blue');
+        $(this).addClass('new_green');
+      }else if($(this).hasClass('new_red')){
+        $(this).removeClass('new_red');
+        $(this).addClass('new_green');
+      }else if($(this).hasClass('new_yellow')){
+        $(this).removeClass('new_yellow');
+        $(this).addClass('new_green');
+      }else if($(this).hasClass('new_black')){
+        $(this).removeClass('new_black');
+        $(this).addClass('new_green');
+      }else if($(this).hasClass('new_eraser')){
+        $(this).removeClass('new_eraser');
+        $(this).addClass('new_green');
+      }else{
+        $(this).addClass('new_green');
+      }
+    });
+  });
+
+  $('#red').on('click', function(){
+    $('.grid').mouseover(function(){
+      if($(this).hasClass('new_green')){
+        $(this).removeClass('new_green');
+        $(this).addClass('new_red');
+      }else if($(this).hasClass('new_blue')){
+        $(this).removeClass('new_blue');
+        $(this).addClass('new_red');
+      }else if($(this).hasClass('new_yellow')){
+        $(this).removeClass('new_yellow');
+        $(this).addClass('new_red');
+      }else if($(this).hasClass('new_black')){
+        $(this).removeClass('new_black');
+        $(this).addClass('new_red');
+      }else if($(this).hasClass('new_eraser')){
+        $(this).removeClass('new_eraser');
+        $(this).addClass('new_red');
+      }else{
+        $(this).addClass('new_red');
+      }
+    });
+  });
+
+  $('#yellow').on('click', function(){
+    $('.grid').mouseover(function(){
+      if($(this).hasClass('new_green')){
+        $(this).removeClass('new_green');
+        $(this).addClass('new_yellow');
+      }else if($(this).hasClass('new_red')){
+        $(this).removeClass('new_red');
+        $(this).addClass('new_yellow');
+      }else if($(this).hasClass('new_blue')){
+        $(this).removeClass('new_blue');
+        $(this).addClass('new_yellow');
+      }else if($(this).hasClass('new_black')){
+        $(this).removeClass('new_black');
+        $(this).addClass('new_yellow');
+      }else if($(this).hasClass('new_eraser')){
+        $(this).removeClass('new_eraser');
+        $(this).addClass('new_yellow');
+      }else{
+        $(this).addClass('new_yellow');
+      }
+    });
+  });
+
+  $('#black').on('click', function(){
+    $('.grid').mouseover(function(){
+      if($(this).hasClass('new_green')){
+        $(this).removeClass('new_green');
+        $(this).addClass('new_black');
+      }else if($(this).hasClass('new_red')){
+        $(this).removeClass('new_red');
+        $(this).addClass('new_black');
+      }else if($(this).hasClass('new_yellow')){
+        $(this).removeClass('new_yellow');
+        $(this).addClass('new_black');
+      }else if($(this).hasClass('new_blue')){
+        $(this).removeClass('new_blue');
+        $(this).addClass('new_black');
+      }else if($(this).hasClass('new_eraser')){
+        $(this).removeClass('new_eraser');
+        $(this).addClass('new_black');
+      }else{
+        $(this).addClass('new_black');
+      }
+    });
+  });
+
+  $('#eraser').on('click', function(){
+    $('.grid').mouseover(function(){
+      if($(this).hasClass('new_green')){
+        $(this).removeClass('new_green');
+        $(this).addClass('new_eraser');
+      }else if($(this).hasClass('new_red')){
+        $(this).removeClass('new_red');
+        $(this).addClass('new_eraser');
+      }else if($(this).hasClass('new_yellow')){
+        $(this).removeClass('new_yellow');
+        $(this).addClass('new_eraser');
+      }else if($(this).hasClass('new_blue')){
+        $(this).removeClass('new_blue');
+        $(this).addClass('new_eraser');
+      }else if($(this).hasClass('new_black')){
+        $(this).removeClass('new_black');
+        $(this).addClass('new_eraser');
+      }else{
+        $(this).addClass('new_eraser');
+      }
+    });
+  });
+
 });
